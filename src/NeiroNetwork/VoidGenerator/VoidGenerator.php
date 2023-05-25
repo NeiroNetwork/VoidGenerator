@@ -17,7 +17,8 @@ class VoidGenerator extends Generator{
 	public function __construct(int $seed, string $preset){
 		parent::__construct($seed, $preset);
 
-		$this->chunk = new Chunk([], BiomeArray::fill(BiomeIds::PLAINS), false);
+		// fixme: バイオームが従来の PLAINS ではなく OCEAN になってる
+		$this->chunk = new Chunk([], false);
 	}
 
 	public function generateChunk(ChunkManager $world, int $chunkX, int $chunkZ) : void{
