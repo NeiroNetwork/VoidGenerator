@@ -1,4 +1,4 @@
 name: VoidGenerator
 version: 0.0.1
 main: NeiroNetwork\VoidGenerator\Main
-api: 4.0.0
+api: 5.0.0
